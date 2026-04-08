@@ -49,7 +49,7 @@ A more in‑depth reading for cats with Big Feelings:
 - Possible reasons for sudden changes in mood or habits  
 - Suggestions for routines, rituals, or small adjustments to help them settle
 
-All readings are written in plain, honest language. No copy‑paste horoscopes, no generic “your cat loves you” paragraphs. If your cat is holding a grudge about the vacuum cleaner from 2014, it will come up.
+All readings are written in plain, honest language. No copy‑paste horoscopes, no generic “your cat loves you” paragraphs. If your cat is holding a grudge about your vacuum cleaner, it will come up.
 
 ---
 
