@@ -552,7 +552,7 @@
       MADAME ZELDA'S<br>
       <span style="font-size:28px;font-family:Papyrus,cursive;">~*~ CAT PSYCHIC EMPORIUM ~*~</span>
     </div>
-    <div class="subtitle">EST. 1997 &bull; CERTIFIED BY THE INTERNATIONAL SOCIETY OF FELINE TELEPATHY &bull; EST. 1997</div>
+    <div class="subtitle">EST. 1997 • CERTIFIED BY THE INTERNATIONAL SOCIETY OF FELINE TELEPATHY • EST. 1997</div>
     <div class="gif-row" style="margin-top:6px;">
       <div class="fake-gif">💀</div>
       <div class="fake-gif">🔮</div>
@@ -868,8 +868,8 @@
   </div>
 </div>
 
-<audio id="bg-music" autoplay loop>
-  <source src="DOORS Roblox OST_ Elevator Jam.mp3" type="audio/mpeg">
+<audio id="bg-music" preload="auto" loop>
+  <source src="DOORS%20Roblox%20OST_%20Elevator%20Jam.mp3" type="audio/mpeg">
 </audio>
 
 <script>
@@ -1112,4 +1112,18 @@
   })();
 
   initCaptcha();
+
+  window.addEventListener('load', function() {
+    var audio = document.getElementById('bg-music');
+    if (!audio) return;
+    var playPromise = audio.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(function() {
+        document.body.addEventListener('click', function once() {
+          audio.play();
+          document.body.removeEventListener('click', once);
+        });
+      });
+    }
+  });
 </script>
